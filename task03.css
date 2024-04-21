@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+
+
+    /* background-color: mix(rgb(11,4,48), white, 25%); */
+
+
+}
+
+body {
+    background-color: rgb(11, 4, 48);
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(11,4,48), rgba(255, 255, 255, 0)); */
+    margin: 0;
+    background-color: rgb(11, 4, 48);
+    height: 100vh;
+    width: 100vw;
+    
+   
+}
+
+
+.container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+.white-blur{
+    background-image:
+    radial-gradient(circle closest-side,
+        rgb(59, 49, 131),
+        rgb(11, 4, 48));
+    width: 650px;
+    height: 650px;
+    position: fixed;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    inset: 0;
+    overflow: hidden;
+
+}
+
+
+.box_fixed {
+    
+    position: absolute;
+    inset: 0;
+    width: 410px;
+    height: 410px;
+    /* max-width: 100vw;
+    max-height: 100vh; */
+    margin: auto;
+    /* background: transparent; */
+    background: linear-gradient(to bottom right, rgb(21, 11, 82) 15%, rgb(29, 18, 112) 25%, rgb(17, 6, 70) 60%, rgb(29, 18, 112) 70%, rgb(5, 1, 26) 100%);
+    /* Define a linear gradient from top left to bottom right with color stops */
+    transform: rotate(45deg);
+    border-radius: 30px;
+    /* border: 20px solid transparent; Set border to transparent */
+    overflow: hidden;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    padding: 50px;
+}
+
+.box_fixed1 {
+    position: absolute;
+    inset: 0;
+    width: 365px;
+    height: 365px;
+    max-width: 100vw;
+    max-height: 100dvh;
+    margin: auto;
+    /* background: transparent; */
+    background: linear-gradient(to bottom right, rgb(15, 6, 75) 15%, rgb(29, 18, 112) 25%, rgb(21, 11, 86) 60%, rgb(29, 18, 112) 70%, rgb(21, 11, 86) 100%);
+    border-radius: 20px;
+    /* border:20px solid transparent; */
+    padding: 20px;
+
+}
+
+
+
+.box_fixed2 {
+    position: absolute;
+    inset: 0;
+    width: 330px;
+    height: 330px;
+    max-width: 100vw;
+    max-height: 100dvh;
+    margin: auto;
+    background: transparent;
+    /* transform: rotate(45deg); */
+    border-radius: 20px;
+    background-color: rgb(29, 18, 110);
+    border: 15px solid rgb(29, 18, 112);
+    overflow: hidden;
+
+}
+
+.inner-container {
+    background: transparent;
+    position: absolute;
+    inset: 0;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8);
+    transform: rotate(45deg);
+
+}
+
+.box {
+    position: absolute;
+    inset: 0;
+    width: 340px;
+    height: 360px;
+    max-width: 100vw;
+    max-height: 100dvh;
+    margin: auto;
+    top: 5%;
+
+}
+.dance-icon{
+    transition: left 1s ease-in-out,top 1s ease-in-out;
+    z-index:2 ;
+}
+
+.blue {
+    border-radius: 20px;
+    transform: rotate(-7deg);
+    border: 5px solid transparent;
+    animation: rotateblue 4s infinite linear;
+    border-color: rgb(30, 213, 227);
+    box-shadow: inset 0 0 10px rgba(30, 213, 227),
+        0px 0px 15px rgb(30, 213, 227);
+    overflow: hidden;
+    
+
+}
+@keyframes rotateblue {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-359deg);
+    }
+}
+
+.blue-light {
+    position: absolute;
+    width: 25%;
+    height: 7px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 15px #00e1ff,
+        0px 0px 15px #00e1ff;
+}
+
+.light-1 {
+    top: -5px;
+    left: 60px;
+    background-color: #00e1ff;
+}
+.white-point{
+    width: 8px;
+    height: 2px;
+    position: absolute;
+    background-color: white;
+    left: 27%;
+    border-radius: 50%;
+    
+    
+}
+
+
+.light-2 {
+    transform: rotate(90deg);
+    top: 140px;
+    left: -43px;
+    background-color: #00e1ff;
+}
+
+.pink {
+    border: 5px solid transparent;
+    border-radius: 20px;
+    transform: rotate(12deg);
+    border-color: rgb(210, 24, 218);
+    box-shadow: inset 0 0 10px rgba(210, 24, 218),
+        0px 0px 15px rgb(210, 24, 218);
+    overflow: hidden;
+    animation: rotateCircle 5s infinite linear; 
+
+
+}
+
+@keyframes rotateCircle {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+} 
+
+.pink-light {
+    position: absolute;
+    top: 60%;
+    left: 280px;
+    width:30%;
+    height: 4px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 15px rgb(210, 24, 218),
+        0px 0px 15px rgb(210, 24, 218);
+    z-index: 1;
+    transform: rotate(90deg);
+}
+
+.c1 {
+    border: 5px solid transparent;
+    color: rgb(51, 222, 255);
+    position: absolute;
+    top: 55%;
+    left: 28%;
+    text-shadow: 0 0 5px rgba(51, 222, 255, 0.8);
+
+}
+
+.c2 {
+    color: rgb(182, 176, 224);
+    position: absolute;
+    top: 28%;
+    left: 42%;
+    text-shadow: 0 0 5px rgba(182, 176, 224, 0.8);
+}
+
+
+.c3 {
+    color: rgb(51, 222, 255);
+    position: absolute;
+    top:35%;
+    left: 76%;
+    text-shadow: 0 0 5px rgba(51, 222, 255, 0.8);
+    font-size: 8px;
+}
+
+
+
+.s1 {
+    color: rgb(210, 24, 218);
+    position: absolute;
+    top: 77%;
+    left: 52%;
+    text-shadow: 0 0 5px rgba(210, 24, 218, 0.8);
+    font-size: 10px;
+    /* transform: rotate(55deg); */
+
+}
+
+.s2 {
+    color: rgb(210, 24, 218);
+    position: absolute;
+    top: 17%;
+    left: 55%;
+    text-shadow: 0 0 5px rgba(210, 24, 218, 0.8);
+    /* transform: rotate(45deg); */
+
+}
+
+.s3 {
+    color: rgb(194, 139, 196);
+    position: absolute;
+    top: 77%;
+    left: 22%;
+    text-shadow: 0 0 5px rgba(210, 24, 218, 0.8);
+}
+
+/* .dance-icon{
+    transition: left 1s ease-in-out, top 1s ease-in-out; 
+    z-index: 2;
+} */
